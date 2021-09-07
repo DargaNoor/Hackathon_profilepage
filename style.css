@@ -1,0 +1,171 @@
+body
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 120%;
+    width:1370px;
+    padding:10px;
+    margin:10px;
+}
+h1,h2,h3
+{
+    font-size: larger;
+    font-family: sans-serif;
+}
+h1{
+    margin-top: 5px;
+    font-size: 80px;
+}
+div.a
+{
+    width:250px;
+    padding-left:0px;   
+}
+div.top
+{
+    width:1520px;
+
+}
+div.a,div.top
+{
+    float:left;
+    display:inline;
+}
+div.top
+{
+    text-align:right;
+    margin-top:0px;
+    padding-right:0px;
+}
+h1
+{
+    text-align:center;
+}
+img
+{
+    border-radius:2em 2em 2em 2em/2em 2em 2em 2em;
+}
+figcaption
+{
+    float:center;
+    font-family: Arial, Helvetica, sans-serif;
+    clear:none;
+    width:300px;
+    text-indent:0px;
+    margin-top: 10px;
+    padding-left:0px;
+}
+.age
+{
+    padding:67px;
+}
+.top p
+{
+    display:inline;
+}
+.top
+{
+    position: fixed;
+    top:0px;
+    left:0px;
+    margin:0px;
+    background-color: rgb(185, 221, 24);
+    z-index:8px;
+}
+a:link
+{
+    text-decoration:none;
+    padding:5px;
+    letter-spacing: 0.2em;
+}
+
+.top a
+{
+    color:black;
+}
+.top a:visited
+{
+    text-decoration:underline;
+    color:rgb(233, 23, 16);
+}
+ a:hover
+{
+    text-decoration:underline;
+    color:blueviolet;
+    background-color: rgb(135, 222, 139);
+}
+.top a:active
+{
+    color:rgb(220, 20, 137);
+    background-color: darkkhaki;
+}
+div.side
+{
+    width:700px;
+    margin:56px;
+    margin-left:450px;
+    padding-right:0px;
+    line-height: 1.3em;
+    letter-spacing: 0.06em;
+}
+.start::first-letter
+{
+    
+    font-weight: bold;
+}
+#details
+{
+    line-height: 1.5em;
+    letter-spacing: 0.06em;
+    width:1000px;
+    clear:left;
+    margin-top: 60px;
+    margin-left: 28px;
+    padding-top: 10px;
+}
+#skills
+{
+    line-height: 1.3em;
+    letter-spacing: 0.06em;
+    width:1000px;
+    clear:left;
+    margin-top: 40px;
+    margin-left: 28px;
+    padding-top: 0px;
+}
+#address
+{
+    line-height: 1.3em;
+    letter-spacing: 0.06em;
+    width:1000px;
+    clear:left;
+    margin-top: 40px;
+    margin-left: 28px;
+    padding-top: 10px;
+}
+.contact
+{
+    line-height: 1.3em;
+    letter-spacing: 0.06em;
+    width:1000px;
+    margin-left: 28px;
+    clear:left;
+    margin-top: 60px;
+    padding-top: 10px;
+}
+th
+{
+    text-align: right;
+}
+td
+{
+    padding-left: 8px;
+}
+tr
+{
+    line-height: 1.2em;;
+}
+.head
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+}
