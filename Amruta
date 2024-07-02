@@ -1,0 +1,11 @@
+-- Declare a variable to store the extracted value
+DECLARE checkAgentSOReturn VARCHAR(255);
+
+-- Set the variable with the value from the SOAP response
+SET checkAgentSOReturn = (
+    SELECT VALUE OF xp:extract('/SOAP Domain Msg/Body/checkAgentsSOResponse/checkAgentsSOReturn')
+    FROM XMLNSC(inputroot.soap) AS xp('http://sbiccwebservice.servion.com')
+);
+
+-- Output the extracted value
+OUTPUT('$checkAgentSOReturn = ' || checkAgentSOReturn);
