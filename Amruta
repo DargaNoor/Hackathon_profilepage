@@ -1,3 +1,20 @@
+
+-- Declare a variable to store the extracted value
+DECLARE checkAgentSOReturn VARCHAR(255);
+
+-- Set the variable with the value from the SOAP response
+SET checkAgentSOReturn = (
+    SELECT value(*)
+    FROM XMLQUERY('//*[local-name()="checkAgentsSOReturn"]'
+                  PASSING XMLNSC(inputroot.soap) AS doc
+                  RETURNING CONTENT
+    );
+
+-- Output the extracted value
+OUTPUT('$checkAgentSOReturn = ' || checkAgentSOReturn);
+
+
+
 -- Declare a variable to store the extracted value
 DECLARE checkAgentSOReturn VARCHAR(255);
 
